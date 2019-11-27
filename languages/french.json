@@ -1,1 +1,4 @@
-["montaigne", "animals", "bain de soleil", "les vacances"]
+{
+  "buttonText": "Changer le mot",
+  "words": ["montaigne", "animals", "bain de soleil", "les vacances"]
+}

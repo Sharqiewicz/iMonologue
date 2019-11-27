@@ -14,7 +14,8 @@ const fetchTopic = file => {
   fetch(file)
     .then(data => data.json())
     .then(data => {
-      topic_arr = data;
+      topic_arr = data.words;
+      topic_button.value = data.buttonText;
       changeTopic();
       return data;
     })

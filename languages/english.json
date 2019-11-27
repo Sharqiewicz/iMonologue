@@ -1,1 +1,4 @@
-["animals", "montains", "sunbathing", "the vacation"]
+{
+  "buttonText": "Change the word",
+  "words": ["animals", "montains", "sunbathing", "the vacation"]
+}
