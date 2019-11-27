@@ -1,0 +1,3 @@
+{
+  "nature" = ["monkey", "dog", "horse"];
+}
