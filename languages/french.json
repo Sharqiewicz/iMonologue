@@ -1,4 +1,13 @@
 {
   "buttonText": "Changer le mot",
-  "words": ["montaigne", "animals", "bain de soleil", "les vacances"]
+  "words": [
+    "Aimez-vous aller à montaigne ?",
+    "Avez-vous un animal de compagnie ?",
+    "Avez-vous un projet pour les vacances ?",
+    "Qu'est-ce que est ton couleur préféré ?",
+    "Qui est ton chanteur préféré ?",
+    "Salut! Comment ca va ?",
+    "Qu'est-ce que vous faites quand il pleut ?",
+    "Qu'est-ce que vous faites demain ?"
+  ]
 }

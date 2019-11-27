@@ -1,4 +1,13 @@
 {
   "buttonText": "Zmien slowo",
-  "words": ["zwierzeta", "gory", "opalanie sie", "wakacje"]
+  "words": [
+    "Czy lubisz jeździc w góry?",
+    "Czy masz jakiegoś zwierzaka?",
+    "Masz jakieś plany na wakacje?",
+    "Jaki jest twój ulubiony kolor?",
+    "Kto jest twoim ulubionym piosenkarzem?",
+    "Cześć, jak się masz?",
+    "Co robisz, gdy pada deszcz?",
+    "Co jutro będziesz robić?"
+  ]
 }
