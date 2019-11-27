@@ -1,18 +1,37 @@
 const text_element = document.querySelector(".theWord--text");
-let length;
+const topic_button = document.querySelector('input[type="button"]');
+let link, topic_arr;
 
-fetch("./languages/english.json")
-  .then(data => data.json())
-  .then(data => {
-    length = data.length;
-    return data;
-  })
-  .then(data => {
-    let randomTopic = Math.floor(Math.random() * length);
-    return data[randomTopic];
-  })
-  .then(data => {
-    text_element.innerHTML = data;
-    return data;
-  })
-  .catch(err => console.log(err));
+let language = document.querySelectorAll('input[name="lang"]');
+language = [...language];
+
+const changeTopic = () => {
+  let randomTopic = Math.floor(Math.random() * topic_arr.length);
+  text_element.innerHTML = topic_arr[randomTopic];
+};
+
+const fetchTopic = file => {
+  fetch(file)
+    .then(data => data.json())
+    .then(data => {
+      topic_arr = data;
+      changeTopic();
+      return data;
+    })
+    .catch(err => console.log(err));
+};
+
+const changeLang = () => {
+  let language = document.querySelectorAll('input[name="lang"]');
+  language = [...language];
+  language = language.filter(element => element.checked);
+  link = `./languages/${language[0].value}.json`;
+
+  fetchTopic(link);
+};
+
+language.forEach(el => {
+  el.addEventListener("change", changeLang);
+});
+
+topic_button.addEventListener("click", changeTopic);
