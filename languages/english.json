@@ -1,1 +1,13 @@
-["animals", "montains", "sunbathing", "the vacation"]
+{
+  "buttonText": "Change the word",
+  "words": [
+    "Do you like going to the mountains?",
+    "Do you have a pet ?",
+    "Do you have a project for the holidays?",
+    "What is your favorite color?",
+    "Who is your favorite singer?",
+    "Hi how are you ?",
+    "What do you do when it rains?",
+    "What are you doing tomorrow?"
+  ]
+}
