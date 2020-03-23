@@ -2,14 +2,32 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   font-family: "Open Sans Condensed", sans-serif;
+  background: #130f40;
 }
+
+.main{
+  border-radius: 25px;
+  background: white;
+  min-height: 85vh;
+}
+
+@media(max-width: 678px){
+  .container{
+    padding: 0 !important;
+    max-width:100% !important;
+  }
+  .main{
+    border-radius: 0px;
+  }
+}
+
+
 .languages {
-  width: 100vw;
-  height: 10vh;
+  height: 12vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #3b5998;
+  background: #130f40;
 }
 input[type="radio"] {
   margin: 0 50px;
@@ -41,13 +59,10 @@ input[type="radio"]:last-of-type::before {
 }
 
 .theWord {
-  width: 100%;
-  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background: #d8dfea;
+  padding: 20vh 5vw;
 }
 
 .theWord--text {
@@ -61,13 +76,15 @@ input[type="radio"]:last-of-type::before {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background: #d8dfea;
 }
 
 input[type="button"] {
-  background: #3b5998;
+  background: #130f40;
+  border-radius: 15px;
   color: white;
   padding: 40px 90px;
   font-size: 24px;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
 }

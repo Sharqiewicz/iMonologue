@@ -1,27 +1,35 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>iMonologue</title>
-  </head>
-  <body>
-    <div class="languages">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>iMonologue</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar languages">
       <input type="radio" value="english" name="lang" />
       <input type="radio" value="polish" name="lang" />
       <input type="radio" value="french" name="lang" />
     </div>
-    <div class="theWord">
-      <div class="theWord--text">Choose language</div>
-    </div>
-    <div class="button-section">
-      <input type="button" value="Change the word" />
-    </div>
-    <script src="loading.js"></script>
-  </body>
+    <section class="main">
+      <div class="theWord">
+        <div class="theWord--text">Choose language</div>
+      </div>
+      <div class="button-section">
+        <input type="button" value="Change the word" />
+      </div>
+    </section>
+  </div>
+  <script src="loading.js"></script>
+</body>
+
 </html>
