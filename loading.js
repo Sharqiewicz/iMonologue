@@ -38,3 +38,6 @@ language.forEach(el => {
 topic_button.addEventListener("click", changeTopic);
 
 fetchTopic(`./languages/english.json`)
+
+
+// CACHE DESIGN PATTERN
