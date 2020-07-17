@@ -11,6 +11,7 @@ const changeTopic = () => {
 };
 
 const fetchTopic = file => {
+  console.log(file)
   fetch(file)
     .then(data => data.json())
     .then(data => {
@@ -37,7 +38,7 @@ language.forEach(el => {
 
 topic_button.addEventListener("click", changeTopic);
 
-fetchTopic(`./languages/english.json`)
+fetchTopic(`./languages/french.json`)
 
 
 // CACHE DESIGN PATTERN
