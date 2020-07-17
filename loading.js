@@ -11,7 +11,6 @@ const changeTopic = () => {
 };
 
 const fetchTopic = file => {
-  console.log(file)
   fetch(file)
     .then(data => data.json())
     .then(data => {
